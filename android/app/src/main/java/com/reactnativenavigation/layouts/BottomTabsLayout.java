@@ -16,6 +16,7 @@ import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.WritableMap;
 import com.reactnativenavigation.NavigationApplication;
+import com.reactnativenavigation.events.Event;
 import com.reactnativenavigation.events.EventBus;
 import com.reactnativenavigation.events.ScreenChangedEvent;
 import com.reactnativenavigation.params.ActivityParams;
@@ -232,6 +233,7 @@ public class BottomTabsLayout extends BaseLayout implements AHBottomNavigation.O
         for (int i = 0; i < bottomTabs.getItemsCount(); i++) {
             screenStacks[i].updateScreenStyle(screenInstanceId, styleParams);
         }
+        bottomTabs.setStyleFromScreen(this.getCurrentScreen().getStyleParams());
     }
 
     @Override
