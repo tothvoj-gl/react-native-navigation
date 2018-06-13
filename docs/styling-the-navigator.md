@@ -104,6 +104,9 @@ this.props.navigator.setStyle({
   modalPresentationStyle: 'formSheet' // Sets the presentation style for modally presented view controllers. Supported styles are: 'formSheet', 'pageSheet', 'overFullScreen', 'overCurrentContext' and 'fullScreen'. 
   
   largeTitle: false, // Sets the nav bar title to be in the larger iOS 11 style
+  navBarLargeTextColor: '#000000', // change the text color of large titles
+  navBarLargeTextFontSize: 34, // change the font size of large titles
+  navBarLargeTextFontFamily: 'font-name', // Changes the large title font
 
   // Android only
   navigationBarColor: '#000000', // change the background color of the bottom native navigation bar.
